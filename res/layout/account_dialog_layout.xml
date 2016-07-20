@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="400dp" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/white_rounded_corner"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:weightSum="1" >
+
+            <TextView
+                android:id="@+id/login_text_tv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_weight=".9"
+                android:text="Opening a Merchant Account?"
+                android:textColor="#afafaf"
+                android:textSize="16sp" />
+
+            <ImageButton
+                android:id="@+id/dismiss_IM"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_weight=".1"
+                android:scaleType="fitCenter"
+                android:background="@android:color/transparent"
+                android:src="@drawable/croos" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="8dp"
+            android:background="#afafaf" >
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Yozard Business app can help you manage and monitor your business and promotional campaigns, but it can&apos;t create new merchant account and campaigns yet.\n\nFor now you will need to create your merchant account and business on a computer by going to"
+            android:textColor="#afafaf"
+            android:textSize="15sp" />
+        <TextView
+            android:id="@+id/webText_tv"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="www.promopayout.com.bd/merchant"
+            android:autoLink="web"
+            android:textSize="15sp" />
+         <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="before using the app."
+            android:textColor="#afafaf"
+            android:textSize="15sp" />
+        
+    </LinearLayout>
+
+    
+    
+    <Button 
+        android:id="@+id/ok_button" 
+        android:layout_height="50dp"
+        android:layout_width="fill_parent"
+        android:text="OKAY! I got it."
+        android:textColor="#fff"
+        android:textSize="18sp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/orange_selector"
+        />
+
+</RelativeLayout>

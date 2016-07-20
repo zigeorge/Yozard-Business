@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="360dp"
+    android:background="@drawable/white_rounded_corner"
+    android:orientation="vertical"
+    android:layout_margin="5dp"
+    android:weightSum="1" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="175dp"
+        android:background="@drawable/up_round_corner_blue"
+        android:padding="10dp" >
+
+        <TextView
+            android:id="@+id/callback_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:text="Callback Request"
+            android:textColor="#fff" />
+
+        
+
+        <TextView
+            android:id="@+id/timeCallback_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:text="12:00PM"
+            android:textColor="#fff" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="2dp" >
+            <com.mikhaellopez.circularimageview.CircularImageView
+            android:id="@+id/userId_callback_IV"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:scaleType="fitXY" />
+
+            <TextView
+                android:id="@+id/usernameCallback_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:text="User Name"
+                android:textColor="#fff" />
+
+            <TextView
+                android:id="@+id/userEmailcallback_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:text="01822222456"
+                android:textColor="#fff" />
+
+            
+        </LinearLayout>
+        
+        <ImageButton
+                android:id="@+id/callButton"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/dial"
+                android:background="@android:color/transparent"
+                 />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="175dp"
+
+        android:background="@drawable/trans"
+>
+
+        <ImageView 
+            android:id="@+id/callback_background_IV"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:scaleType="centerCrop"
+            
+            />
+        
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="10dp"
+            android:gravity="left"
+            android:orientation="vertical"
+            android:padding="2dp" >
+
+            <TextView
+                android:id="@+id/ItemnameCallback_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Canon Camera"
+                android:textColor="#fff"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/priceCallback_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:text="$500"
+                android:layout_marginLeft="10dp"
+                android:textColor="#fff"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        
+
+        <TextView
+            android:id="@+id/acknowledgementCallback_bill_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:gravity="left|center_vertical"
+            android:text="Offer: Brand promo"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="#fff" />
+    </RelativeLayout>
+
+</LinearLayout>

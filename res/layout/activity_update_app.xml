@@ -1,0 +1,75 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.yozard.pp.UpdateAppActivity" >
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dim10"
+        android:text="This is the Title"
+        android:textColor="#616161"
+        android:textSize="22sp" />
+
+    <LinearLayout
+        android:id="@+id/llWhatsNew"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvTitle"
+        android:layout_margin="@dimen/dim10"
+        android:background="#ffe0b2"
+        android:padding="@dimen/dim10"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tvWhatsNew"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dim10"
+            android:text="# WHAT'S NEW"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#757575" />
+
+        <ListView
+            android:id="@+id/lvWhatsNew"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvWhatsNew"
+            android:layout_marginBottom="@dimen/dim10"
+            android:layout_marginLeft="@dimen/dim20"
+            android:layout_marginRight="@dimen/dim20"
+            android:layout_marginTop="@dimen/dim10" />
+    </LinearLayout>
+<!-- #8bc34a -->
+    <Button
+        android:id="@+id/btnUpdateApp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/llWhatsNew"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/update_bg_color"
+        android:paddingBottom="@dimen/dim10"
+        android:paddingLeft="@dimen/dim20"
+        android:paddingRight="@dimen/dim20"
+        android:paddingTop="@dimen/dim10"
+        android:text="UPDATE NOW"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/tvSkip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnUpdateApp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dim5"
+        android:padding="@dimen/dim5"
+        android:textColor="@drawable/skip_text_color"
+        android:text="Skip >>"
+        android:textSize="15sp" />
+
+</RelativeLayout>

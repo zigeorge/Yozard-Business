@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="2dp"
+    android:background="@color/transparent" >
+    
+    <TextView 
+        android:id="@+id/tvLeftMark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="*"
+        android:textColor="#757575"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/tvWhatsNewText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dim5"
+        android:layout_toRightOf="@+id/tvLeftMark"
+        android:text="Thats whats new with us!!!"
+        android:textColor="#757575"
+        android:textSize="16sp" />
+
+</RelativeLayout>
